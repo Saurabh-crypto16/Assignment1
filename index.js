@@ -16,7 +16,6 @@ mongoose.connect(MONGOURI,{
  .catch(err => console.error('Oops, could not connect to mongoDB', err))
 
  var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
-
  // setup the logger
  app.use(morgan('combined', { stream: accessLogStream }))
 
