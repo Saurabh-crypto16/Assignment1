@@ -47,7 +47,7 @@ router.post("/users/new", async (req, res) => {
   });
 });
 
-// add new ticket
+//add new ticket
 router.post("/tickets/new", requireLogin, async (req, res) => {
   const { title, description, status, priority, assignedTo } = req.body;
   //create ticket object
