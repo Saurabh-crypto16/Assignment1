@@ -14,4 +14,5 @@ Steps to install:
 
 1. Clone the repo using  ```git clone https://github.com/Saurabh-crypto16/Assignment1.git```
 2. Open the project in VS Code and install all the dependencies using ```npm install```
-3. Once the dependencies are installed start the server using  ```nodemon index.js```
+3. Create a .env file and save PORT variable and MONGOURI variable to connect to database
+4. Once the dependencies are installed start the server using  ```npm start```
