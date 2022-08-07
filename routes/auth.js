@@ -11,7 +11,7 @@ const requireLogin = require("../middleware/requireLogin");
 const morgan = require("morgan");
 
 
-// To signup a new user and return bearer token
+// To signup a new user and return bearers token
 router.post("/users/new", async (req, res) => {
   const { username, role } = req.body;
   
