@@ -70,7 +70,7 @@ router.post("/tickets/new", requireLogin, async (req, res) => {
     });
 });
 
-//show all tickets
+//fetch all tickets
 router.get("/tickets/all", requireLogin, async (req, res) => {
   //fetch all tickets from database
   await Ticket.find()
