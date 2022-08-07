@@ -121,7 +121,7 @@ router.get("/tickets/", requireLogin, async (req, res) => {
         console.log(err);
       });
   } else if (priority) {
-    //if priority is passed in query
+    //if priority is passed in the query
     await Ticket.find({ priority: priority })
       .populate(
         "detailOf",
