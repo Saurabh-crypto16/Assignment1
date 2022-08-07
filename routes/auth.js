@@ -139,7 +139,7 @@ router.get("/tickets/", requireLogin, async (req, res) => {
   }
 });
 
-//delete ticket
+//delete ticket based on ticketId
 router.post("/tickets/delete", requireLogin, async (req, res) => {
   const { ticketId } = req.body;
   if (req.user.role == "admin") {
