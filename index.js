@@ -6,7 +6,8 @@ const {MONGOURI} = require('./config/keys')
 const fs = require('fs')
 const path = require('path')
 const morgan = require('morgan')
-
+const swaggerUi = require('swagger-ui-express')
+const swaggerFile = require('./swagger_output.json')
 
 mongoose.connect(MONGOURI,{
  useNewUrlParser: true,
@@ -24,6 +25,7 @@ require('./models/user')
 require('./models/ticket')
 app.use(express.json())
 app.use(require('./routes/auth'))
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
  app.listen(PORT,()=>{
      console.log("Server is up at ",PORT)
