@@ -108,7 +108,7 @@ router.get("/tickets/", requireLogin, async (req, res) => {
         console.log(err);
       });
   } else if (title) {
-    //if title is passed in query
+    //if title is passed in the query
     await Ticket.find({ title: title })
       .populate(
         "detailOf",
