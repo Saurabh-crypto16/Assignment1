@@ -12,7 +12,7 @@ module.exports = (req,res,next)=>{
         return res.status(401).json({error:"You must be logged in"})
     }
     
-    //trim token
+    //trim token to get auth keys
     const token = authorization.replace("Bearer ","")
     
     //verifying to get user from token
