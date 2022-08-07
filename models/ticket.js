@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const uuid = require('uuid')
+const uuid = require('uuid')    //to generate unique id
 
 //Ticket Schema
 const ticket = new mongoose.Schema({
