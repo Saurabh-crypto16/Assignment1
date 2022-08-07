@@ -95,7 +95,7 @@ router.get("/tickets/", requireLogin, async (req, res) => {
   const priority = req.query.priority;
 
   if (status) {
-    //if status is passed in query
+    //if status is passed in the query
     await Ticket.find({ status: status })
       .populate(
         "detailOf",
