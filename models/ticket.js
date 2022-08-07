@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const uuid = require('uuid')
 
-//User Schema
+//Ticket Schema
 const ticket = new mongoose.Schema({
     _id: {
         type: String,
