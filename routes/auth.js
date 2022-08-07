@@ -188,7 +188,7 @@ router.post("/tickets/markAsClosed", requireLogin, async (req, res) => {
               }
             });
             if(arr.length > 0){
-              res.json({ error: "You cannot close this ticket" ,higherPriority : arr });
+              res.json({ error:  "A higher priority task remains to be closed" ,higherPriority : arr });
             }
             else{
               Ticket.findByIdAndUpdate(ticketId, { status: "close" })
@@ -207,7 +207,7 @@ router.post("/tickets/markAsClosed", requireLogin, async (req, res) => {
               }
             });
             if(arr.length > 0){
-              res.json({ error: "You cannot close this ticket", higherPriority: arr });
+              res.json({ error: "A higher priority task remains to be closed", higherPriority: arr });
             }
             else{
               Ticket.findByIdAndUpdate(ticketId, { status: "close" })
