@@ -6,7 +6,7 @@ Video Url - https://drive.google.com/file/d/1gdPSwnbEInSzpPtNG0iUihtBLnhohODc/vi
 <br>
 Log File Url - https://drive.google.com/file/d/1_egUdLit0k49cWMvf2ZOlWrEGv0y9_9X/view?usp=sharing
 <br>
-API Documentation URL - https://assignemnt-skrate.herokuapp.com/doc
+API Documentation URL - https://ticket-management-system-123.herokuapp.com/doc/
 
 Steps to run:
 1. Open postman or insomnia
