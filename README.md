@@ -1,6 +1,6 @@
 # Assignment1
 
-Project Url - https://assignemnt-skrate.herokuapp.com/
+Project Url - https://ticket-management-system-123.herokuapp.com/
 <br>
 Video Url - https://drive.google.com/file/d/1gdPSwnbEInSzpPtNG0iUihtBLnhohODc/view?usp=sharing
 <br>
